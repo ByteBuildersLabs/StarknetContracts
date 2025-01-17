@@ -1,0 +1,10 @@
+{
+    "name":"BunnyFlame",
+    "description": "BunnyFlame, a fiery guardian with flames in its eyes, is a majestic beast of unparalleled strength, resilience, and speed.",
+    "image":"https://ipfs.io/ipfs/bafkreicdjy3guiuuycqaz2dqsmvy2llrstjnwl4inokykqxciz7ge42gfm",
+    "attributes": [
+        {"trait_type": "Attack", "value": "100"},
+        {"trait_type": "Defense", "value": "100"},
+        {"trait_type": "Speed", "value": "100"}
+    ]
+}
