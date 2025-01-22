@@ -1,1 +1,0 @@
-mod erc721ByteBeast;

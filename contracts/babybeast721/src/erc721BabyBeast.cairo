@@ -2,7 +2,7 @@
 // Compatible with OpenZeppelin Contracts for Cairo ^0.18.0
 
 #[starknet::contract]
-mod ByteBeastNFT {
+mod BabyBeastNFT {
     use openzeppelin::access::ownable::OwnableComponent;
     use openzeppelin::introspection::src5::SRC5Component;
     use openzeppelin::token::erc721::ERC721Component;
@@ -60,9 +60,8 @@ mod ByteBeastNFT {
     }
 
     #[constructor]
-    fn constructor(ref self: ContractState, owner: ContractAddress) {
-        self.erc721.initializer("ByteBeastNFT", "BBST", "IPFS-url");
-        self.ownable.initializer(owner);
+    fn constructor(ref self: ContractState) {
+        self.erc721.initializer("BabyBeastNFT", "BEAST", "https://ipfs.io/ipfs/bafybeiabkdoo3fsh5ztoe2pot6ccugd6hvhewnah2u4i5rdmxl2wqqp5dm/");
         self.erc721_enumerable.initializer();
     }
 
@@ -96,7 +95,6 @@ mod ByteBeastNFT {
             token_id: u256,
             data: Span<felt252>,
         ) {
-            self.ownable.assert_only_owner();
             self.erc721.safe_mint(recipient, token_id, data);
         }
 

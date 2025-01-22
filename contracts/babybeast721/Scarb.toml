@@ -1,0 +1,11 @@
+[package]
+name = "babybeast721"
+version = "0.1.0"
+edition = "2024_07"
+
+[dependencies]
+openzeppelin = "0.18.0"
+
+[[target.starknet-contract]]
+sierra = true
+casm = true

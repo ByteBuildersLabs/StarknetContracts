@@ -2,7 +2,7 @@
 version = 1
 
 [[package]]
-name = "contracts"
+name = "babybeast721"
 version = "0.1.0"
 dependencies = [
  "openzeppelin",
